@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: QuizService
+
+server:
+  port: 8081
