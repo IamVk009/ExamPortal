@@ -3,7 +3,7 @@ spring:
     name: QuizService
 
   datasource:
-    url: jdbc:mysql://localhost:3306/quiz_db
+    url: jdbc:mysql://localhost:3306/exam_db
     username: root
     password: root
 
