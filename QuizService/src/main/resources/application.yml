@@ -14,3 +14,12 @@ spring:
 
 server:
   port: 8081
+
+eureka:
+  instance:
+    client:
+      serverUrl:
+        # URL of the Eureka server to which the client should register itself.
+        # In this case, the Eureka server is running on the local machine at port 8761.
+        # The 'defaultZone' is the default URL for Eureka's REST API used for registering and discovering services.
+        defaultZone: http://localhost:8761/eureka/
