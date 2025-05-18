@@ -4,3 +4,17 @@ spring:
 
 server:
   port: 8083
+
+# Disabling this service to get registered as client
+
+eureka:
+  client:
+    # Whether the client should register itself with the Eureka server.
+    # Setting this to 'false' ensures that the service will not be registered in the Eureka registry.
+    # This might be useful for services that are only consumers of other services.
+    register-with-eureka: false
+
+    # Whether the client should fetch the registry from the Eureka server.
+    # Setting this to 'false' means the service will not download the list of available services
+    # from Eureka, which can be useful if the client does not need to discover other services.
+    fetch-registry: false
