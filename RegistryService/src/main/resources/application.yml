@@ -1,9 +1,9 @@
 spring:
   application:
-    name: RegistryService
+    name: REGISTRY-SERVICE
 
 server:
-  port: 8083
+  port: 8761
 
 # Disabling this service to get registered as client
 
