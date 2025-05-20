@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: API-GATEWAY-SERVICE
+
+server:
+  port: 8084
