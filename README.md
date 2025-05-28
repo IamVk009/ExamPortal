@@ -86,8 +86,6 @@ Each directory is an independent Spring Boot microservice.
 3. The **QuizService** and **QuestionService** communicate via Feign clients, with Eureka handling service registry and load balancing.
 4. Each service has its own data model and database (not shown here but recommended for microservices).
 
-![Microservice Architecture Diagram](https://user-images.githubusercontent.com/your-image-placeholder.png) <!-- Add an architecture diagram if available -->
-
 ---
 
 ## Running the Application
@@ -138,5 +136,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - Community contributors
 
 ---
-
-*Feel free to customize this README further to include setup details, database configuration, environment variables, and contribution guidelines!*
