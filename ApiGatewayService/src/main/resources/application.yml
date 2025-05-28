@@ -2,5 +2,21 @@ spring:
   application:
     name: API-GATEWAY-SERVICE
 
+# Route Configurations
+  cloud:
+    gateway:
+      routes:
+        # Route for QUIZ-SERVICE
+        - id: QUIZ-SERVICE  # Unique name for this route
+          uri: lb://QUIZ-SERVICE  # Use load-balanced service named QUIZ-SERVICE
+          predicates:
+            - Path=/api/v1/quiz/**  # Forward requests that match this path
+
+        # Route for QUESTION-SERVICE
+        - id: QUESTION-SERVICE  # Unique name for this route
+          uri: lb://QUESTION-SERVICE  # Use load-balanced service named QUESTION-SERVICE
+          predicates:
+            - Path=/api/v1/questions/**  # Forward requests that match this path
+
 server:
   port: 8084
