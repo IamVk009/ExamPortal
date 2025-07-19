@@ -16,7 +16,6 @@
 - [How It Works](#how-it-works)
 - [Running the Application](#running-the-application)
 - [Technologies Used](#technologies-used)
-- [License](#license)
 
 ---
 
